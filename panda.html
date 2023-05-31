@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(back.jpg);
+            background-size:cover;
+            position: fixed;
+            background-repeat: no-repeat;
+            transition: 3s ease-in;
+        }
+        .image{
+            height: 150px;
+            width: 150px;
+            position: absolute;
+        }
+        #solder{
+            position: absolute;
+            top: 530px;
+            left: 550px;
+        }
+        .snow{
+            position: absolute;
+            height: 80px;
+            width: 80px;
+        }
+        #main{
+            height: 100px;
+            width: 250px;
+            background:rgb(203,220,203,0.4);
+            position: absolute;
+            left: 1230px;     
+            padding: 20px;
+            border-radius: 20px;
+        }
+        #time{
+            height: 100px;
+            width: 250px;
+            background:rgb(203,220,203,0.4);
+            position: absolute;
+            left: 0px;     
+            padding: 20px;
+            border-radius: 20px;
+        }
+        #text,#t{
+            font-size: 60px;
+            position: absolute;
+            top: 30px;
+        }
+        #score,#ti{
+            font-size: 60px;
+            position: absolute;
+            top: 30px;
+            left: 200px;
+            color: rgb(207, 81, 9);
+        }
+        #ti{
+            position: absolute;
+            top: 30px;
+            left: 180px; 
+        }
+         *{
+            margin: 0;
+            padding: 0;
+        } 
+        #hide{
+            margin-top: -20px;
+            height: 1000px;
+            width: 1550px;
+            background:rgb(203,220,203,0.4);
+            position: relative;
+        }
+        .popup{
+            height: 250px;
+            width: 500px;
+            /* background-color: aqua; */
+            background-image: url(m.jpg);
+            background-size: cover;
+            margin: auto;
+            opacity: 1;
+            position: relative;
+            border-radius: 30px;
+        }
+        p{
+            font-size: 70px;
+            position: absolute;
+            top: 20px;
+            left: 80px;
+            color: white;
+        }
+        .action{
+            position: absolute;
+            top: 130px;
+            left: 100px;
+        }
+        .restart,.exit{
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bolder;
+            border-radius: 20px;
+            border: none;
+            margin: 10px;
+        }
+        .restart{
+            background-color: #1B9C85;
+            color: white;
+        }
+        .restart:hover{
+            background-color: white;
+            color: #1B9C85;
+            border: 2px solid #1B9C85;
+        }
+        .exit{
+            background-color: #FF6969;
+            color: white;
+        }
+        .exit:hover{
+            background-color: white;
+            color: #FF6969;
+            border: 2px solid #FF6969;
+        }
+    </style>
+</head>
+<body onload="panda(),dra()">
+    <img src="panda.png" width="150" height="150" id="solder">
+    <div id="time">
+        <span id="t">Time/</span>
+        <span id="ti">0:0</span>
+    </div>
+    <div id="main">
+        <span id="text">Score/</span>
+        <span id="score">0</span>
+    </div>
+</body>
+    <script src="army.js"></script>/
+</html>
